@@ -8,6 +8,68 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.06588579795021962,
+            "y": 0.3333333333333333,
+            "uniqueID": 319539,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 0.875
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.21010248901903367,
+            "y": 0.3754789272030651,
+            "uniqueID": 384429,
+            "ioValues": []
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.39677891654465597,
+            "y": 0.4674329501915709,
+            "uniqueID": 958514,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 0.057
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.06076134699853588,
+            "y": 0.6628352490421456,
+            "uniqueID": 584406,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 0.406
+                }
+            ]
+        },
+        {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.6412884333821377,
+            "y": 0.5862068965517242,
+            "uniqueID": 878953,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "3/8 Washer",
+                "numberNeeded": 1,
+                "costUSD": 0.0527,
+                "source": "https://www.mcmaster.com/92141a031",
+                "totalNeeded": 1
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +77,43 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 319539,
+            "ap2ID": 384429
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 384429,
+            "ap2ID": 958514
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 958514,
+            "ap2ID": 878953
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 584406,
+            "ap2ID": 384429
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 878953
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": "0.1"
 }

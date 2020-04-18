@@ -2,3 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|3/8 Washer|1|$0.05|https://www.mcmaster.com/92141a031|
+|Total: |1|$0.05| |
+
+ 3xCOG MSRP: $0.16
